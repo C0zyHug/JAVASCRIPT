@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificador de Brazuka</h1>
+    Em que país você nasceu? <input type="text" name="tp1" id="tp1">
+    <input type="button" value="Verificar" id="ver">
+    <div id="res">
+        RESULTADO
+    </div>
+
+    <script>
+        var bver = document.querySelector('#ver')
+      
+        bver.addEventListener('click', clicar)
+
+
+        function clicar() {
+            if(document.getElementById('tp1').value.toUpperCase() == 'BRASIL') {
+                document.getElementById('res').innerHTML = 'BRAZUKA!'
+                document.body.style.background = 'yellow'
+                document.body.style.color = 'green'
+            }
+            else {
+                document.getElementById('res').innerHTML = 'NÃO É BRAZUKINHA!'
+                document.body.style.background = 'black'
+                document.body.style.color = 'red'
+                
+            }
+        }
+    </script>
+
+</body>
+</html>
