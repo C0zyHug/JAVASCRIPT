@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+}
